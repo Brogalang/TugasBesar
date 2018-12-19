@@ -54,7 +54,8 @@ class KonsultanController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Konsultan::find($id);
+        return view('konsultan.lihat', ['data' => $data]);
     }
 
     /**
@@ -65,7 +66,8 @@ class KonsultanController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Konsultan::where('id', $id)->get();
+        return view('konsultan.edit', compact('data'));
     }
 
     /**
@@ -77,7 +79,14 @@ class KonsultanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Konsultan::where('id', $id)->first();
+        $data->nama = $request->nama;
+        $data->alamat = $request->alamat;
+        $data->jasa = $request->jasa;
+        $data->email = $request->email;
+        $data->rating = $request->rating;
+        $data->save();
+        return redirect()->route('konsultan.index')->with('alert-success', 'Data berhasil diubah!');
     }
 
     /**
@@ -88,6 +97,8 @@ class KonsultanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Konsultan::where('id', $id)->first();
+        $data->delete();
+        return redirect()->route('konsultan.index');
     }
 }
