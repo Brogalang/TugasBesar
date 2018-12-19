@@ -24,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profil', 'fotosController@index');
 Route::post('/profil', 'fotosController@insert');
+Route::resource('konsultan', 'KonsultanController'); 
