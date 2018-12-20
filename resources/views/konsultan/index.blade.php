@@ -6,6 +6,7 @@
     <th>Alamat</th>
     <th>Jasa</th>
     <th>Email</th>
+    <th>Tarif</th>
     <th>Rating</th>
     <th>Option</th>  
   </tr>
@@ -21,6 +22,7 @@
     <td>{{ $items->alamat }}</td>
     <td>{{ $items->jasa }}</td>
     <td>{{ $items->email }}</td>
+    <td>{{ $items->tarif }}</td>
     <td>{{ $items->rating }}</td>
     <td>
       <form action="{{ route('konsultan.destroy', $items->id) }}" method="post">

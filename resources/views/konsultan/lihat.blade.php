@@ -23,6 +23,11 @@
             <td>{{ $data->email }}</td>
         </tr>
         <tr>
+            <td>Tarif</td>
+            <td>:</td>
+            <td>Rp. {{ $data->tarif }}</td>
+        </tr>
+        <tr>
             <td>Rating</td>
             <td>:</td>
             <td>{{ $data->rating }}</td>

@@ -19,6 +19,7 @@ class CreateKonsultanTable extends Migration
             $table->string('alamat', 100);
             $table->string('jasa', 50);
             $table->string('email', 50);
+            $table->string('tarif', 50);
             $table->string('rating', 50);
             $table->timestamps();
         });

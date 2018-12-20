@@ -41,6 +41,7 @@ class KonsultanController extends Controller
         $data->alamat = $request->alamat;
         $data->jasa = $request->jasa;
         $data->email = $request->email;
+        $data->tarif = $request->tarif;
         $data->rating = $request->rating;
         $data->save();
         return redirect()->route('konsultan.index');
@@ -84,6 +85,7 @@ class KonsultanController extends Controller
         $data->alamat = $request->alamat;
         $data->jasa = $request->jasa;
         $data->email = $request->email;
+        $data->tarif = $request->tarif;
         $data->rating = $request->rating;
         $data->save();
         return redirect()->route('konsultan.index')->with('alert-success', 'Data berhasil diubah!');

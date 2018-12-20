@@ -8,6 +8,8 @@
   <input type="text" name="jasa">
   <label>Email:</label>
   <input type="text" name="email">
+  <label>Tarif:</label>
+  <input type="text" name="tarif">
   <label>Rating:</label>
   <input type="text" name="rating">
   <button type="submit">Submit</button>

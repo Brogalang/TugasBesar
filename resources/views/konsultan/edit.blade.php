@@ -10,6 +10,8 @@
     <input type="text" name="jasa" value="{{ $datas->jasa }}">
     <label>Email:</label>
     <input type="text" name="email" value="{{ $datas->email }}">
+    <label>Tarif:</label>
+    <input type="text" name="tarif" value="{{ $datas->tarif }}">
     <label>Rating:</label>
     <input type="text" name="rating" value="{{ $datas->rating }}">
     <button type="submit">Submit</button>
