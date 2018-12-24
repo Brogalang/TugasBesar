@@ -19,12 +19,12 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
-<body id="page-top">
+<body id="page-top" style="padding:0 margin:0">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">JASINFO</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,19 +47,6 @@
       </div>
     </nav>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>JUST INFO</strong>
-            </h1>
-            <hr>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -68,7 +55,7 @@
             <hr class="light my-4">
 
 
-<table border='1'>
+<table border='1' style="width:100%" bgcolor="#FFFFFF">
 <thead>
   <tr>
     <th>No.</th>
