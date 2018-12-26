@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Profil</title>
-</head>
-<body>
+@extends('layouts.app')
+
+
+@section('content')
 	<form method="post" action="/profil" enctype="multipart/form-data">
 		{{csrf_field()}}
 
@@ -13,5 +11,4 @@
 		<hr>
 		<input type="submit" name="submit" value="simpan"/>
 	</form>
-</body>
-</html>
+@endsection
