@@ -42,6 +42,7 @@ class KonsultanController extends Controller
         $data->jasa = $request->jasa;
         $data->email = $request->email;
         $data->tarif = $request->tarif;
+        $data->tentang = $request->tentang;
         //$data->rating = $request->rating;
         $data->rating = 0;
         $data->save();
@@ -87,6 +88,7 @@ class KonsultanController extends Controller
         $data->jasa = $request->jasa;
         $data->email = $request->email;
         $data->tarif = $request->tarif;
+        $data->tentang = $request->tentang;
         //$data->rating = $request->rating;
         //data->rating = 0;
         $data->save();
