@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="{{ asset('css/preview.css') }}" rel="stylesheet">
 </head>
-<body>
+<body background="upload/bg1.jpg">
     <div id="app">
         <nav class="navbar navbar-expand-md bg-primary navbar-dark">
             <div class="container">
@@ -68,7 +68,13 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                                     <a class="dropdown-item" href="profil">Profil</a>
-                                    <a class="dropdown-item" href="galeri">Pemilik Jasa</a>
+                                     <a class="dropdown-item" href="posts">Edit Profil</a>
+                                    <a class="dropdown-item" href="posts">Penyedia Jasa</a>
+
+
+                                    <!--INI BUAT Login-->
+                                     <a class="dropdown-item" href="konsultan">Input Data</a>
+
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

@@ -16,6 +16,11 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('jasa');
+            $table->Integer('tarif')->nullable()->unsigned();
+            $table->string('tentang');
+            $table->string('web');
+            $table->string('email');
             $table->timestamps();
         });
     }

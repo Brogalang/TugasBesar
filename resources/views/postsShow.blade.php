@@ -32,7 +32,7 @@
 
                                     <div class="preview-pic tab-content">
 
-                                      <div class="tab-pane active" id="pic-1"><img src="\upload\galang.jpg" style="margin-top: 20px;"></img></div>
+                                      <div class="tab-pane active" id="pic-1"><img src="\upload\{{$post->foto}}" style="margin-top: 20px;"></img></div>
 
                                     </div>
 
@@ -42,7 +42,7 @@
 
                                 <div class="details col-md-6">
 
-                                    <h3 class="product-title">Laravel 5.5 Ratting System</h3>
+                                    <h3 class="product-title">{{$post->name}}</h3>
 
                                     <div class="rating">
 
@@ -58,41 +58,14 @@
 
                                     </div>
 
-                                    <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+                                    <p class="product-description">{{$post->tentang}}</p>
 
-                                    <h4 class="price">current price: <span>$180</span></h4>
+                                    <h4 class="price">current price: <span>Rp. {{$post->tarif}},00</span></h4>
 
-                                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                                    <strong><a href="http://{{$post->web}}" target="_blank">Website</a></strong>
 
-                                    <h5 class="sizes">sizes:
+                                    <p class="email">Email : {{$post->email}}</p>
 
-                                        <span class="size" data-toggle="tooltip" title="small">s</span>
-
-                                        <span class="size" data-toggle="tooltip" title="medium">m</span>
-
-                                        <span class="size" data-toggle="tooltip" title="large">l</span>
-
-                                        <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
-
-                                    </h5>
-
-                                    <h5 class="colors">colors:
-
-                                        <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
-
-                                        <span class="color green"></span>
-
-                                        <span class="color blue"></span>
-
-                                    </h5>
-
-                                    <div class="action">
-
-                                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-
-                                        <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
-
-                                    </div>
 
                                 </div>
 

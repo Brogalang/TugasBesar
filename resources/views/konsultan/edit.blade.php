@@ -8,7 +8,7 @@
     <table>
        <tr>
             <td><label>Nama:</label></td>
-            <td><input type="text" name="nama" value="{{ $datas->nama }}"></td>
+            <td><input type="text" name="name" value="{{ $datas->nama }}"></td>
        </tr> 
        <tr>
            

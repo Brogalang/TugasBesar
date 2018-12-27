@@ -28,6 +28,10 @@
 
                             <th>Name</th>
 
+                            <th>Jasa</th>
+
+                            <th>Tarif</th>
+
                             <th width="400px">Star</th>
 
                             <th width="100px">View</th>
@@ -43,6 +47,10 @@
                                 <td>{{ $post->id }}</td>
 
                                 <td>{{ $post->name }}</td>
+
+                                <td>{{$post->jasa}}</td>
+
+                                <td>{{$post->tarif}}</td>
 
                                 <td>
 

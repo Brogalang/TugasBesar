@@ -23,30 +23,7 @@
 <body id="page-top" style="padding:0 margin:0">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">JASINFO</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
 
     <section class="bg-primary" id="about">
       <div class="container">
@@ -56,7 +33,7 @@
             <p class="section-heading text-white">Daftarkan diri anda sebagai orang yang berjasa</p>
             <hr class="light my-4">
 
-<form action="{{ route('konsultan.store') }}" method="post">
+<!-- <form action="{{ route('konsultan.store') }}" method="post">
   {{ csrf_field() }}
   <table align="center">
     <tr>
@@ -83,7 +60,41 @@
       <td><label style="color: white">About Me:</label></td>
       <td><textarea name="tentang"></textarea></td>
     </tr>
+  </table> -->
+
+<form action="{{ route('konsultan.store') }}" method="post">
+  {{ csrf_field() }}
+  <table align="center">
+    <tr>
+      <td><label style="color: white">Nama:</label></td>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td><label style="color: white">Jasa:</label></td>
+      <td><input type="text" name="jasa"></td>
+    </tr>
+    <tr>
+      <td><label style="color: white">Tarif: Rp.</label></td>
+      <td><input type="number" name="tarif">,00</td>
+    </tr>
+    <tr>
+      <td><label style="color: white">Email:</label></td>
+      <td><input type="text" name="email"></td>
+    </tr>
+    <tr>
+      <td><label style="color: white">Web:</label></td>
+      <td><input type="text" name="web"></td>
+    </tr>
+    <tr>
+      <td><label style="color: white">About Me:</label></td>
+      <td><textarea name="tentang"></textarea></td>
+    </tr>
+    <!-- <tr>
+      <td><label style="color: white">Foto:</label></td>
+      <td><input type="file" id="foto" name="foto" placeholder="Image" class="form-control"></td>
+    </tr> -->
   </table>
+
   <!-- <label>Rating:</label> -->
   <!-- <input type="text" name="rating"> -->
   <button type="submit">Submit</button>

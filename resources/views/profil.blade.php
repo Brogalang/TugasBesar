@@ -2,42 +2,37 @@
 
 @section('content')
 <div class="container" style="margin-top:30px">
+  <div class="jumbotron">
   <div class="row">
     <div class="col-sm-4">
-      <img src="upload/galang.jpg" class="rounded-circle" alt="Tampan" width="236" height="236">
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
+      <img src="upload/andika.jpg" class="rounded-circle" alt="Tampan" width="236" height="236">
+      <h3>Muhammad Aji Darmawan</h3>
+      <p>Ingin bisa segera mencapai cita-cita</p>
+      <h3>Contact</h3>
+
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a href="https://www.facebook.com/profile.php?id=100029570513122&ref=br_rs" target="_blank">Facebook</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#">087823438008</a>
         </li>
       </ul>
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Biodata</h2>
+      <h5>Bekasi, Dec 7, 2001</h5>
       <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Saya Ingin mendapatkan jasa yang menarik di website ini</p>
+      <br>
+      
     </div>
   </div>
+</div>
 </div>
 
 @endsection

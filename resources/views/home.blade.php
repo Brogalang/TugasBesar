@@ -3,10 +3,7 @@
 
 @section('content')
 <div>
-	<a href="/konsultan">Konsultan list</a>
-</div>
-<div>
-	<a href="/konsultan/create">Create Konsultan</a>	
+	<strong><a href="/konsultan/create">Create Konsultan</a></strong>	
 </div>
 
 

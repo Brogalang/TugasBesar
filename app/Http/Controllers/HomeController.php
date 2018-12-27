@@ -80,6 +80,12 @@ class HomeController extends Controller
     }
 
 
+        public function create()
+    {
+        return view('konsultan.create');
+    }
+
+
 
     public function postPost(Request $request)
 
@@ -105,6 +111,47 @@ class HomeController extends Controller
 
         return redirect()->route("posts");
 
+    }
+
+        public function store(Request $request)
+    {
+        $data = new Post();
+        $data->name = $request->name;
+        $data->jasa = $request->jasa;
+        $data->tarif = $request->tarif;
+        $data->tentang = $request->tentang;
+        $data->web = $request->web;
+        $data->email = $request->email;
+
+        // $uploadedFile = $request->file('foto');        
+        // $path = $uploadedFile->store('public/upload');
+        // $format = $request->file('foto')->getClientOriginalExtension();
+        // $data->foto = $path;
+
+        //$data->rating = $request->rating;
+        $data->save();
+        return redirect()->route('konsultan.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = Konsultan::where('id', $id)->first();
+        $data->name = $request->name;
+        $data->jasa = $request->jasa;
+        $data->tarif = $request->tarif;
+        $data->tentang = $request->tentang;
+        $data->web = $request->web;
+        $data->email = $request->email;
+
+        // $uploadedFile = $request->file('foto');        
+        // $path = $uploadedFile->store('public/upload');
+        // $format = $request->file('foto')->getClientOriginalExtension();
+        // $data->foto = $path;
+
+        //$data->rating = $request->rating;
+        //data->rating = 0;
+        $data->save();
+        return redirect()->route('konsultan.index')->with('alert-success', 'Data berhasil diubah!');
     }
 
 }
