@@ -122,11 +122,14 @@ class HomeController extends Controller
         $data->tentang = $request->tentang;
         $data->web = $request->web;
         $data->email = $request->email;
+        if($data->foto == null)
+            $data->foto = 'galang.jpg';
 
-        // $uploadedFile = $request->file('foto');        
-        // $path = $uploadedFile->store('public/upload');
-        // $format = $request->file('foto')->getClientOriginalExtension();
-        // $data->foto = $path;
+        // $file       = $request->file('foto');
+        // $fileName   = $file->getClientOriginalName();
+        // $request->file('foto')->move("image/", $fileName);
+        // $data->foto = $fileName;
+        
 
         //$data->rating = $request->rating;
         $data->save();

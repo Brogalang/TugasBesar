@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('tentang');
             $table->string('web');
             $table->string('email');
+            $table->string('foto')->default(null);
             $table->timestamps();
         });
     }

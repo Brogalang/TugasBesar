@@ -89,7 +89,7 @@
       <td><label style="color: white">About Me:</label></td>
       <td><textarea name="tentang"></textarea></td>
     </tr>
-    <!-- <tr>
+<!--     <tr>
       <td><label style="color: white">Foto:</label></td>
       <td><input type="file" id="foto" name="foto" placeholder="Image" class="form-control"></td>
     </tr> -->

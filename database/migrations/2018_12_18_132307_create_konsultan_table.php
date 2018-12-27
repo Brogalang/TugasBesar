@@ -21,7 +21,7 @@ class CreateKonsultanTable extends Migration
             $table->string('email', 50);
             $table->string('tarif', 50)->nullable();
             $table->string('tentang', 300)->nullable();
-            $table->unsignedBigInteger('rating', 50);
+            $table->BigInteger('rating')->nullable()->unsigned();
             $table->timestamps();
         });
     }
