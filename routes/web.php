@@ -27,7 +27,7 @@ Route::get('/profil', 'fotosController@index');
 Route::post('/profil', 'fotosController@insert');
 // Route::resource('konsultan', 'KonsultanController');
 Route::resource('konsultan', 'HomeController');
-Route::get('/galeri', 'galeriController@galeri'); 
+// Route::get('/galeri', 'galeriController@galeri'); 
 
 Route::get('posts', 'HomeController@posts')->name('posts');
 Route::post('posts', 'HomeController@postPost')->name('posts.post');

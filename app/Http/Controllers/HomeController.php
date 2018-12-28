@@ -122,8 +122,8 @@ class HomeController extends Controller
         $data->tentang = $request->tentang;
         $data->web = $request->web;
         $data->email = $request->email;
-        if($data->foto == null)
-            $data->foto = 'galang.jpg';
+        // if($data->foto == null)
+            $data->foto = $request->name.".jpg";
 
         // $file       = $request->file('foto');
         // $fileName   = $file->getClientOriginalName();
@@ -157,4 +157,10 @@ class HomeController extends Controller
         return redirect()->route('konsultan.index')->with('alert-success', 'Data berhasil diubah!');
     }
 
+
+        public function edit($id)
+    {
+        $data = Konsultan::where('id', $id)->get();
+        return view('konsultan.edit', compact('data'));
+    }
 }

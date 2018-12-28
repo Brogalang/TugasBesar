@@ -62,7 +62,7 @@
 
                                     <h4 class="price">current price: <span>Rp. {{$post->tarif}},00</span></h4>
 
-                                    <strong><a href="http://{{$post->web}}" target="_blank">Website</a></strong>
+                                    <strong><a href="{{$post->web}}" target="_blank">Website</a></strong>
 
                                     <p class="email">Email : {{$post->email}}</p>
 

@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-	<strong><a href="/konsultan/create">Create Konsultan</a></strong>	
+	<center><button type="button" class="btn btn-basic btn-lg"><a href="/konsultan/create">Create Jasa</a></button></center>
 </div>
 
 

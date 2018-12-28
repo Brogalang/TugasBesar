@@ -68,7 +68,6 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                                     <a class="dropdown-item" href="profil">Profil</a>
-                                     <a class="dropdown-item" href="posts">Edit Profil</a>
                                     <a class="dropdown-item" href="posts">Penyedia Jasa</a>
 
 
